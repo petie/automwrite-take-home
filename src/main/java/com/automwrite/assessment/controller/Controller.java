@@ -35,14 +35,7 @@ public class Controller {
         XWPFDocument toneDocument = new XWPFDocument(toneFile.getInputStream());
         XWPFDocument contentDocument = new XWPFDocument(contentFile.getInputStream());
 
-        // Do the processing here
-        toneDocument.getParagraphs().forEach(paragraph -> {
-            log.debug("Paragraph: '{}'", paragraph.getText());
-        });
-
-        String generatedText = llmService.generateText("This is a test prompt");
-        log.debug("Generated text: '{}'", generatedText);
-        // TODO
+        // TODO: Do the processing here
 
         // Simple response to indicate that everything completed
         return ResponseEntity.ok("File successfully uploaded, processing started");
