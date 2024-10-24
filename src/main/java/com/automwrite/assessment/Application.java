@@ -1,13 +1,13 @@
-package com.automwrite.assessment.recruitmentseniortakehome;
+package com.automwrite.assessment;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class RecruitmentSeniorTakeHomeApplication {
+public class Application {
 
     public static void main(String[] args) {
-        SpringApplication.run(RecruitmentSeniorTakeHomeApplication.class, args);
+        SpringApplication.run(Application.class, args);
     }
 
 }
