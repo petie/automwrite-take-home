@@ -26,7 +26,7 @@ public class Controller {
      * but using the extracted tone.
      * @param toneFile File to extract the tone from
      * @param contentFile File to apply the tone to
-     * @return
+     * @return A response indicating that the processing has completed
      */
     @PostMapping("/test")
     public ResponseEntity<String> test(@RequestParam MultipartFile toneFile, @RequestParam MultipartFile contentFile) throws
@@ -38,6 +38,6 @@ public class Controller {
         // TODO: Do the processing here
 
         // Simple response to indicate that everything completed
-        return ResponseEntity.ok("File successfully uploaded, processing started");
+        return ResponseEntity.ok("File successfully uploaded, processing completed");
     }
 }
