@@ -1,5 +1,7 @@
 package com.automwrite.assessment.controller;
 
+import com.automwrite.assessment.service.LlmService;
+import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -14,7 +16,10 @@ import java.io.IOException;
 @Slf4j
 @RestController
 @RequestMapping("/api")
+@AllArgsConstructor
 public class Controller {
+
+    private final LlmService llmService;
 
     /**
      * You should extract the tone from the `toneFile` and update the `contentFile` to convey the same content
@@ -34,6 +39,9 @@ public class Controller {
         toneDocument.getParagraphs().forEach(paragraph -> {
             log.debug("Paragraph: '{}'", paragraph.getText());
         });
+
+        String generatedText = llmService.generateText("This is a test prompt");
+        log.debug("Generated text: '{}'", generatedText);
         // TODO
 
         // Simple response to indicate that everything completed
