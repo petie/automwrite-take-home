@@ -42,7 +42,7 @@ public class LlmServiceImpl implements LlmService {
             headers.set("anthropic-version", "2023-06-01");
 
             Map<String, Object> requestBody = Map.of(
-                "model", "claude-3-sonnet-20241022",
+                "model", "claude-3-5-sonnet-20241022",
                 "max_tokens", 1024,  // Claude supports up to 8192 output tokens
                 "messages", new Object[]{
                     Map.of("role", "user", "content", prompt)
