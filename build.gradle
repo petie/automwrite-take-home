@@ -24,7 +24,9 @@ repositories {
 }
 
 dependencies {
+    // Required dependencies
     implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.apache.poi:poi:5.2.5'
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
     annotationProcessor 'org.projectlombok:lombok'
