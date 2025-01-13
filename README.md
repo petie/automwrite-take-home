@@ -1,4 +1,4 @@
-# Automwrite TakeHome
+# Automwrite Take Home
 
 Please find a copy of the assessment in this folder, and the text with different tones in the folder titled "different tones" in this repo. The exercise is to provide a .docx output that would be client presentable.
 
