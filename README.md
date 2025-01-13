@@ -1,6 +1,6 @@
 # Automwrite TakeHome
 
-Please find a copy of the assessment in this folder, and the text with different tones in the folder titled "different tones" in this repo.
+Please find a copy of the assessment in this folder, and the text with different tones in the folder titled "different tones" in this repo. The exercise is to provide a .docx output that would be client presentable.
 
 ## Overview
 REST API that transfers writing styles between documents.
